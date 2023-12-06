@@ -13,7 +13,9 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'default')
 
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOST', default='127.0.0.1, localhost').split(', ')
+ALLOWED_HOSTS = [os.getenv(
+  'ALLOWED_HOST',
+  default='127.0.0.1, localhost, faqfriend.ddns.net, 62.84.123.62').split(', ')]
 
  
 # Application definition
